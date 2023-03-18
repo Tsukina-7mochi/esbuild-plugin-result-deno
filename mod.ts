@@ -3,7 +3,7 @@ import { Plugin } from 'https://deno.land/x/esbuild@v0.17.11/mod.js';
 const getTimeString = () => {
   const date = new Date();
   return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-}
+};
 
 const buildResultPlugin = (): Plugin => {
   let startTime = 0;
@@ -26,7 +26,7 @@ const buildResultPlugin = (): Plugin => {
         }
       });
     },
-  }
+  };
 };
 
 export default buildResultPlugin;
