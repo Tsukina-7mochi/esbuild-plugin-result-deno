@@ -5,7 +5,7 @@ const getTimeString = () => {
   return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 }
 
-const buildResultPlugin: Plugin = (() => {
+const buildResultPlugin = (): Plugin => {
   let startTime = 0;
   let endTime = 0;
   return {
@@ -27,6 +27,6 @@ const buildResultPlugin: Plugin = (() => {
       });
     },
   }
-})();
+};
 
 export default buildResultPlugin;
