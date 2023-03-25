@@ -1,4 +1,4 @@
-import { Plugin } from 'https://deno.land/x/esbuild@v0.17.11/mod.js';
+import { Plugin } from 'https://deno.land/x/esbuild@v0.17.13/mod.js';
 
 const getTimeString = () => {
   const date = new Date();
