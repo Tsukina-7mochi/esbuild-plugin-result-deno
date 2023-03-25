@@ -1,11 +1,11 @@
-import { Plugin } from 'https://deno.land/x/esbuild@v0.17.13/mod.js';
+import { esbuild } from './deps.ts';
 
 const getTimeString = () => {
   const date = new Date();
   return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 };
 
-const buildResultPlugin = (): Plugin => {
+const buildResultPlugin = (): esbuild.Plugin => {
   let startTime = 0;
   let endTime = 0;
   return {
