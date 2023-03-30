@@ -2,7 +2,11 @@ import { esbuild } from './deps.ts';
 
 const getTimeString = () => {
   const date = new Date();
-  return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+  const hour = `0${date.getHours()}`.slice(-2);
+  const minutes = `0${date.getMinutes()}`.slice(-2);
+  const seconds = `0${date.getSeconds()}`.slice(-2);
+
+  return `${hour}:${minutes}:${seconds}`;
 };
 
 const buildResultPlugin = (): esbuild.Plugin => {
