@@ -20,5 +20,8 @@
     "options": {
       "singleQuote": true
     }
+  },
+  "tasks": {
+    "example-build": "deno run --allow-run --allow-read --allow-write --allow-env --allow-net ./example/build.ts"
   }
 }
