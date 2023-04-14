@@ -3,12 +3,12 @@ import { esbuild } from '../deps.ts';
 import buildResultPlugin from '../mod.ts';
 
 const config: esbuild.BuildOptions = {
-  entryPoints: [ './example/main.ts' ],
+  entryPoints: ['./example/main.ts'],
   bundle: true,
   outdir: './example',
   platform: 'browser',
-  plugins: [ buildResultPlugin() ],
-}
+  plugins: [buildResultPlugin()],
+};
 
 await esbuild.build(config);
 
