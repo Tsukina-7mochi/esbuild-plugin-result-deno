@@ -5,7 +5,7 @@ import buildResultPlugin from '../mod.ts';
 const config: esbuild.BuildOptions = {
   entryPoints: ['./example/main.ts'],
   bundle: true,
-  outdir: './example',
+  outdir: './example/dist',
   platform: 'browser',
   plugins: [buildResultPlugin()],
 };
