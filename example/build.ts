@@ -1,4 +1,3 @@
-import { build } from 'https://deno.land/x/esbuild@v0.17.15/mod.js';
 import { esbuild } from '../deps.ts';
 import buildResultPlugin from '../mod.ts';
 
